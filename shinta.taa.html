@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profil — Shinta</title>
+</head>
+<body>
+  <header class="cover">
+    <!-- ganti src dengan path lokal: static/images/cover.jpg atau URL luar -->
+    <img class="cover-img" src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=..." alt="Cover">
+    <div class="profile-row">
+      <img class="avatar" src="{{ url_for('static', filename='images/avatar-shinta (2).png') }}" alt="Foto Shinta">
+
+      <div class="profile-meta">
+        <h1>Shinta Taa</h1>
+        <p class="sub">Web Developer | Petani CODE </p>
+      </div>
+      <div class="actions">
+        <a href="{{ url_for('tambah') }}" class="btn primary">Tambahkan teman</a>
+        <button class="btn">Kirim pesan</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="left-col">
+      <section class="card">
+        <h3>Tentang</h3>
+        <p>Mahasiswa Informatika. Suka ngoding yang gak bisa-bisa desain UI/UX, pecinta kopi dan kucing.</p>
+      </section>
+
+      <section class="card">
+        <h3>Kontak</h3>
+        <ul class="info">
+          <li>Email: shintadm1203@gmail.com</li>
+          <li>Lokasi: Madiun, ID</li>
+          <li>Telepon: +6289504179128</li>
+          <li>Status: Menikah dengan Kim Mingyu</li>
+          <li> Website: <a href="https://www.facebook.com/share/1CUHb2aGDs/" 
+          target="_blank">www.facebook.com/shinta.taa 
+        </a></li>
+          <li>GitHub: <a href="https://github.com/zeroshintashinta/zeroshintashinta"
+         target="_blank">github.com/zeroshintashinta</a></li>
+          <li>LinkedIn: <a href="www.linkedin.com/in/shinta-dewi-895b3529b" 
+        target="_blank">linkedin.com/shinta-dewi</a></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Teman</h3>
+        <div class="friends">
+          <!-- avatar kecil -->
+          <img src="https://i.pravatar.cc/60?img=12" alt="">
+          <img src="https://i.pravatar.cc/60?img=22" alt="">
+          <img src="https://i.pravatar.cc/60?img=32" alt="">
+          <img src="https://i.pravatar.cc/60?img=42" alt="">
+        </div>
+      </section>
+    </aside>
+
+    <section class="center-col">
+      <article class="post card">
+        <div class="post-header">
+          <h3>Postingan Terbaru</h3>
+        </div>
+        <div class="post-body">
+          <p>Halo semuanya! Ini contoh postingan di profil dummy. Terus belajar Joomla & VirtueMart — salam stress!</p>
+        </div>
+      </article>
+
+      <article class="card gallery">
+        <h3>Foto</h3>
+        <div class="grid">
+         <img src="{{ url_for('static', filename='images/avatar1.png') }}" alt="Foto 1">
+<img src="{{ url_for('static', filename='images/avatar2.png') }}" alt="Foto 2">
+<img src="{{ url_for('static', filename='images/avatar3.png') }}" alt="Foto 3">
+<img src="{{ url_for('static', filename='images/avatar5.png') }}" alt="Foto 4">
+<video controls width="100%">
+<source src="{{ url_for('static', filename='video/kerja.mp4') }}" type="video/mp4">
+      Browser kamu tidak mendukung tag video.
+    </video>
+<img src="{{ url_for('static', filename='images/TEST IQ.png') }}" alt="Foto 5"> 
+<img src="{{ url_for('static', filename='images/avatar6.png') }}" alt="Foto 6">
+
+        </div>
+      </article>
+    </section>
+
+    <aside class="right-col">
+      <section class="card">
+        <h3>Intro singkat</h3>
+        <p>Gak tau ini apa — dummy text untuk layout.</p>
+      </section>
+
+
+      <section class="card">
+        <h3>Info tambahan</h3>
+        <p>Konten lain (mis. link tugas, sertifikat, dll) bisa ditempatkan di sini.</p>
+      </section>
+
+      <section class="card">
+    <h3>Postingan Ulang (Video)</h3>
+    <video controls width="100%">
+      <source src="{{ url_for('static', filename='video/makeup lover_is.mp4') }}" type="video/mp4">
+      Browser kamu tidak mendukung tag video.
+    </video>
+       <video controls width="100%">
+      <source src="{{ url_for('static', filename='video/teknologi.mp4') }}" type="video/mp4">
+      Browser kamu tidak mendukung tag video.
+    </video>
+     <video controls width="100%">
+      <source src="{{ url_for('static', filename='video/tutoring.mp4') }}" type="video/mp4">
+      Browser kamu tidak mendukung tag video.
+    </video>
+     <video controls width="100%">
+      <source src="{{ url_for('static', filename='video/skincerr.mp4') }}" type="video/mp4">
+      Browser kamu tidak mendukung tag video.
+    </video>
+  </section>
+</aside>
+</aside>
+
+    </aside>
+  </main>
+
+  <footer class="footer">
+    © 2025 — efbeebook • Profil
+  </footer>
+</body>
+</html>

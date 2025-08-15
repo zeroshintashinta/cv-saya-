@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Shinta</title>
+   <link rel="stylesheet" href="style1.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+   <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+ </head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='img/pasfoto.png') }}" alt="Foto Shinta" class="avatar">
+        <h1>Shinta Dewi Mustika Ningati</h1>
+        <p>Web Developer | Designer | Beginner 1</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Saya adalah mahasiswa Prodi informatika.
+            saya memiliki minat dalam pengembangan web dan desain.</p>
+            Saya senang belajar hal baru dan berkontribusi dalam proyek yang menarik.</p>
+    </section>
+    <section id="data"></section>
+       <h2>Data Pribadi</h2>
+       <ul>
+        <li>PTN:Universitas Teknologi Globalisasi</li>
+        <li>lahir: 12 Maret 2004</li>
+        <li>Alamat: Myjend Sungkono</li>
+        <li>Hobi: art drawing, photograph, membaca dan menulis</li>
+        </ul>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Website Portofolio</li>
+            <li>Aplikasi To-Do List</li>
+            <li>Game Sederhana</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: shintadm1212@gmail.com
+</body>
+</html>
+        <p>Phone: +6289504179128</p>
+    </section>
+    <section id="social">
+       <p>Social Media : 
+        <li>
+    <a href="{{ url_for('shinta') }}">efbeebook/shinta.taadummy</a>
+</li>
+
+<body>
+   <script src="script.js"></script>  
+</body> 
+    <footer>
+        <p>&copy; 2025 Shinta Dewi Mustika Ningati</p>
+    </footer>
